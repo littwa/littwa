@@ -1,13 +1,68 @@
-* {
+html {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fff;
-  color: #211221;
-  text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-button {
-  cursor: pointer;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /*
+   * CSS image reference example.
+   */
+  background-image: url('./images/bg-pattern.png');
 }
+.tm {
+  border: 1px solid;
+}
+
+.tm li {
+  width: 400px;
+  list-style: none;
+  word-wrap: break-word;
+}
+.list-border {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-border p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list-border p {
+  margin-left: 10px;
+}
+.flag {
+  width: 200px;
+  border: 2px ridge #fff;
+}
+/* grid */ /* grid */ /* grid */ /* grid */ /* grid */ /* grid */ /* grid */
+
+.nav-list li {
+  height: 10px;
+
+  list-style: none;
+  border: 2px ridge;
+}
+
+.nav-list ul {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+/* .nav-list li:nth-child(1) {
+  background-color: #f00;
+} */

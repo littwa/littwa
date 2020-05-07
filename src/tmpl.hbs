@@ -1,0 +1,23 @@
+<ul class="tm">
+  <li><img class="flag" src="{{flag}}" alt="{{name}}"></li>
+  <li>Name: {{name}}</li>
+  <li>Capital: {{capital}}</li>
+  <li>Population: {{population}} </li>
+  <li class="list-border">Borders: {{#each borders}}
+    <p>{{this}}</p>
+    {{/each}}
+  </li>
+  <li>Timezones: {{timezones}}</li>
+  <li>Сioc {{cioc}}</li>
+  <li>Region {{region}}</li>
+  <li>NativeName {{nativeName}}</li>
+  <li>Languages: {{#each languages}}
+    <p>{{this.iso639_1}} {{this.iso639_2}}</p>
+    {{/each}}
+  </li>
+  <li>
+    {{#with translations }}
+    {{de}} {{fr}}
+    {{/with}}
+  </li>
+</ul>
